@@ -8,3 +8,7 @@ Where you want to store calibration voltages in the EEPROM. What the PHs are for
 Which anaologue pin is reading the PH board. 
 
 From these it is able to calibrate factors and calculate PH. 
+
+
+Dependencies:
+Project requires EEPROMex.h to be installed in order to function.

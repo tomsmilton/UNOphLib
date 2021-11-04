@@ -1,17 +1,25 @@
+/*
+File: UNOphLib.h https://github.com/unicorntom/UNOphLib/
+
+Written by Thomas Milton.
+
+v1.0
+04-Nov-2021
+
+*/
+
 #ifndef UNOphLib_h
 #define UNOphLib_h
 
 #include <Arduino.h>
 
-
 class UNOphLib
 {
 public:
-
-    void    calibrate_a();
-    void    calibrate_b(); 
-    float    read_ph();
-    void    begin(int address_a, float ph_a, int address_b, float ph_b, int voltage_pin);   //adress a and b are where the calib data is stored in eeprom.
+    void calibrate_a();
+    void calibrate_b();
+    float read_ph();
+    void begin(int address_a, float ph_a, int address_b, float ph_b, int voltage_pin); // adress a and b are where the calib data is stored in eeprom.
 
 private:
     int _address_a;
@@ -23,13 +31,6 @@ private:
     float _ph;
     float _a_voltage;
     float _b_voltage;
-
-
 };
-
-
-
-
-
 
 #endif
